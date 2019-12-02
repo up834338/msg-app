@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        p {
+            animation-name: flash-red;
+            animation-duration: 1s;
+            font-size: 1.5em;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        /* Standard syntax */
+        @keyframes flash-red {
+            50% {
+                background-color: red;
+            }
+        }
+    </style>
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="/index.js"></script>
+</head>
+
+<body>
+    <input id="msg" type="text" placeholder="message" />
+    <button onclick="sendmsg();">send</button>
+    <div id="main"></div>
+</body>
+
+</html>
